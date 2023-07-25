@@ -1,0 +1,25 @@
+.btn {
+  padding: 1.5625rem 1.875rem;
+  background: none;
+  outline: none;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: $semi-bold;
+  color: $white-color;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border: 2px solid transparent;
+  font-family: $primary-font;
+
+  &--primary {
+    background: $secondary-color;
+    color: $white-color;
+
+    &:hover {
+      background: $white-color;
+      color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+}

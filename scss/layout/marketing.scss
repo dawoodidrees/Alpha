@@ -1,0 +1,19 @@
+.marketing {
+  padding-block: 6rem 3.75rem;
+  background: $secondary-color;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-question {
+      width: 33.33%;
+      padding: 3.75rem;
+    }
+  }
+}

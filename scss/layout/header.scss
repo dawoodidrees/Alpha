@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__logo {
+    display: flex;
+    max-width: 9.375rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5625rem;
+
+    &-link {
+      display: flex;
+
+      a {
+        color: $white-color;
+      }
+    }
+  }
+}

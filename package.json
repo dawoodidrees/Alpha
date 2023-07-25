@@ -1,0 +1,16 @@
+{
+  "name": "alpha-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass scss/main.scss dist/css/main.css --output-style compressed --watch --recursive",
+    "start": "npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
