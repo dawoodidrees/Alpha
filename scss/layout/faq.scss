@@ -1,5 +1,69 @@
 .faq {
+  padding-bottom: 6.25rem;
+
   &__title {
     margin-bottom: 6.25rem;
+  }
+
+  &__accordion {
+    margin-bottom: 1.25rem;
+    max-width: 50rem;
+    padding-left: 70px;
+
+    &.active &-chevron {
+      background-color: $secondary-color;
+      svg {
+        rotate: 180deg;
+        path {
+          fill: $white-color;
+        }
+      }
+    }
+
+    &.active &-desc {
+      max-height: 100%;
+      opacity: 1;
+      visibility: visible;
+      overflow: auto;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.25rem;
+      cursor: pointer;
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+
+    &-chevron {
+      width: 2.5rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $off-white-color;
+      padding: 0.5rem 0.6875rem;
+      border-radius: 0.3125rem;
+      position: absolute;
+      left: -4.375rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.2s linear;
+
+      svg {
+        transition: all 0.2s linear;
+      }
+    }
+
+    &-desc {
+      font-size: 1rem;
+      max-height: 0;
+      opacity: 0;
+      visibility: hidden;
+      overflow: hidden;
+      transition: all 0.2s linear;
+    }
   }
 }
