@@ -158,6 +158,10 @@
         @media (max-width: $lg) {
           padding: 1rem 6.25rem 1rem 1.5625rem;
         }
+
+        @media (max-width: $md) {
+          padding: 1rem 4.25rem 1rem 1.5625rem;
+        }
       }
 
       .btn {
@@ -168,6 +172,10 @@
         right: 1rem;
         top: 50%;
         transform: translateY(-50%);
+
+        @media (max-width: $md) {
+          width: 2.5rem;
+        }
 
         &:hover svg path {
           fill: $secondary-color;
