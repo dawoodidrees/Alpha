@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -119,20 +120,49 @@
     </section>
 
     <section class="slideshow page-width">
-      <div class="slideshow__slide">
-        <img src="./images/shopify.png" alt="Shopify" />
-      </div>
-      <div class="slideshow__slide">
-        <img src="./images/facebook.png" alt="Facebook" />
-      </div>
-      <div class="slideshow__slide">
-        <img src="./images/wordpress.png" alt="Wordpress" />
-      </div>
-      <div class="slideshow__slide">
-        <img src="./images/nft.png" alt="Nft" />
-      </div>
-      <div class="slideshow__slide">
-        <img src="./images/google.png" alt="Google" />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/shopify.png" alt="Shopify" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/facebook.png" alt="Facebook" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/wordpress.png" alt="Wordpress" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/nft.png" alt="Nft" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/google.png" alt="Google" />
+          </div>
+
+          <!-- REPEAT -->
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/shopify.png" alt="Shopify" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/facebook.png" alt="Facebook" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/wordpress.png" alt="Wordpress" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/nft.png" alt="Nft" />
+          </div>
+
+          <div class="swiper-slide slideshow__slide">
+            <img src="./images/google.png" alt="Google" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -637,6 +667,7 @@
     </footer>
     <div class="subfooter page-width">© Alpha Omega Digital 2023 | All Rights Reserved</div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>
