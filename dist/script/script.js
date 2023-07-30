@@ -18,22 +18,10 @@ var swiper = new Swiper(".mySwiper", {
     delay: 2500,
   },
   breakpoints: {
-    350: {
+    100: {
       slidesPerView: 3,
       spaceBetweenSlides: 30,
     },
-
-    // when window width is <= 499px
-    499: {
-      slidesPerView: 3,
-      spaceBetweenSlides: 30,
-    },
-
-    1000: {
-      slidesPerView: 3,
-      spaceBetweenSlides: 30,
-    },
-    // when window width is <= 999px
     1200: {
       slidesPerView: 5,
       spaceBetweenSlides: 40,
