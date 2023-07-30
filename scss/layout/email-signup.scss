@@ -100,6 +100,10 @@
         letter-spacing: 0.05rem;
         width: 25%;
         padding-inline: 0;
+
+        @media (max-width: $md) {
+          padding-block: 1rem;
+        }
       }
     }
   }
