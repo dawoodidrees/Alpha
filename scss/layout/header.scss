@@ -18,6 +18,10 @@
       max-width: 7rem;
     }
 
+    @media (max-width: $md) {
+      max-width: 5rem;
+    }
+
     img {
       width: 100%;
     }
