@@ -3,7 +3,15 @@
   background: $secondary-color;
 
   @media (max-width: $xlg) {
-    padding-block: 4.8rem 3rem;
+    padding-block: 4.8rem;
+  }
+
+  @media (max-width: $lg) {
+    padding-block: 3.8rem;
+  }
+
+  @media (max-width: $md) {
+    padding-block: 3rem;
   }
 
   &__title {
@@ -13,14 +21,33 @@
     @media (max-width: $xlg) {
       margin-bottom: 5rem;
     }
+
+    @media (max-width: $lg) {
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 10px;
+    }
   }
 
   &__row {
     display: flex;
     justify-content: flex-start;
 
+    @media (max-width: $md) {
+      flex-flow: column;
+      gap: 1.5625rem;
+      padding-block: 2rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: 1.25rem;
+
+      @media (max-width: $md) {
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      }
     }
 
     &-col {
@@ -32,6 +59,15 @@
         padding: 1.25rem;
       }
 
+      @media (max-width: $lg) {
+        padding: 1rem;
+      }
+
+      @media (max-width: $md) {
+        padding: 0;
+        width: 100%;
+      }
+
       &:not(:last-child)::after {
         position: absolute;
         content: "";
@@ -41,6 +77,10 @@
         top: 0;
         right: 0;
         opacity: 0.4;
+
+        @media (max-width: $md) {
+          display: none;
+        }
       }
 
       &-heading {
@@ -51,6 +91,16 @@
           font-size: 1.2rem;
           line-height: 1.9rem;
         }
+
+        @media (max-width: $lg) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        @media (max-width: $md) {
+          font-size: 1.25rem;
+          font-weight: $bold;
+        }
       }
 
       &-title {
@@ -58,6 +108,14 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 1.25rem;
+
+        @media (max-width: $lg) {
+          margin-bottom: 0.875rem;
+        }
+
+        @media (max-width: $md) {
+          margin-bottom: 0.625rem;
+        }
 
         .inter-body-text {
           font-size: 2rem;
@@ -67,6 +125,15 @@
           @media (max-width: $xlg) {
             font-size: 1.6rem;
             line-height: 1.9rem;
+          }
+
+          @media (max-width: $lg) {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+          }
+
+          @media (max-width: $md) {
+            font-weight: $medium;
           }
         }
 
@@ -85,6 +152,19 @@
           @media (max-width: $xlg) {
             min-width: 1.75rem;
             min-height: 1.75rem;
+          }
+
+          @media (max-width: $xlg) {
+            min-width: 1.25rem;
+            min-height: 1.25rem;
+            font-size: 0.9375rem;
+          }
+
+          @media (max-width: $md) {
+            min-width: 1.875rem;
+            min-height: 1.875rem;
+            font-size: 1.25rem;
+            rotate: 310deg;
           }
         }
       }

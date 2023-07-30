@@ -14,6 +14,10 @@
     display: flex;
     max-width: 9.375rem;
 
+    @media (max-width: $lg) {
+      max-width: 7rem;
+    }
+
     img {
       width: 100%;
     }
@@ -24,6 +28,10 @@
     align-items: center;
     justify-content: center;
     gap: 1.5625rem;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
 
     &-link {
       display: flex;

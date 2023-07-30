@@ -16,6 +16,16 @@
     padding: 1.25rem 1.5rem;
   }
 
+  @media (max-width: $lg) {
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: $md) {
+    padding: 0.625rem 1rem;
+    font-size: 0.75rem;
+  }
+
   &--primary {
     background: $secondary-color;
     color: $white-color;

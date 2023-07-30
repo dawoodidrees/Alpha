@@ -6,12 +6,35 @@
   justify-content: space-between;
 
   @media (max-width: $xlg) {
-    padding-block: 4rem;
+    padding-block: 3.2rem;
+  }
+
+  @media (max-width: $lg) {
+    padding-block: 2.5rem;
+  }
+
+  @media (max-width: $md) {
+    padding-block: 2rem;
+  }
+
+  @media (max-width: $sm) {
+    padding-block: 1rem;
   }
 
   &__slide {
-    width: 4rem;
     height: 4rem;
+
+    @media (max-width: $lg) {
+      height: 3.2rem;
+    }
+
+    @media (max-width: $md) {
+      height: 2.5rem;
+    }
+
+    @media (max-width: $sm) {
+      height: 2rem;
+    }
 
     img {
       width: 100%;

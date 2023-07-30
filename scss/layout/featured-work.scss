@@ -9,6 +9,15 @@
     gap: 3.125rem;
   }
 
+  @media (max-width: $lg) {
+    padding-block: 5rem;
+    flex-flow: column;
+  }
+
+  @media (max-width: $md) {
+    padding-block: 4rem;
+  }
+
   &__image {
     width: 50%;
     height: 40.625rem;
@@ -17,6 +26,14 @@
 
     @media (max-width: $xlg) {
       height: 32.5rem;
+    }
+
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+
+    @media (max-width: $md) {
+      height: 20rem;
     }
 
     &-img {
@@ -28,6 +45,11 @@
       position: relative;
       z-index: 5;
       object-fit: cover;
+
+      @media (max-width: $md) {
+        border-top-right-radius: 11%;
+        border-bottom-left-radius: 11%;
+      }
     }
 
     &-bg {
@@ -45,12 +67,20 @@
   &__content {
     width: 50%;
 
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+
     &-sub-title {
       text-transform: uppercase;
       margin-bottom: 1.25rem;
 
       @media (max-width: $xlg) {
         margin-bottom: 1rem;
+      }
+
+      @media (max-width: $lg) {
+        margin-bottom: 0.3125rem;
       }
     }
 
@@ -61,6 +91,10 @@
       @media (max-width: $xlg) {
         margin-bottom: 2.4rem;
       }
+
+      @media (max-width: $lg) {
+        margin-bottom: 1rem;
+      }
     }
 
     &-desc {
@@ -69,6 +103,10 @@
 
       @media (max-width: $xlg) {
         margin-bottom: 2.4rem;
+      }
+
+      @media (max-width: $lg) {
+        margin-bottom: 1rem;
       }
     }
   }

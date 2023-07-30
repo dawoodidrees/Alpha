@@ -1,14 +1,32 @@
 .footer {
+  display: flex;
+  flex-wrap: wrap;
   padding-block: 6.25rem;
   background-color: $black-color;
-  display: flex;
 
   @media (max-width: $xlg) {
     padding-block: 5rem;
   }
 
+  @media (max-width: $lg) {
+    gap: 3.125rem 0;
+    padding-block: 4rem;
+  }
+
+  @media (max-width: $md) {
+    padding-block: 3rem;
+  }
+
   & > div {
     width: 25%;
+
+    @media (max-width: $lg) {
+      width: 50%;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
   }
 
   &__logo {
@@ -21,6 +39,10 @@
         margin-bottom: 2.5rem;
         width: 4rem;
         height: 4rem;
+      }
+
+      @media (max-width: $md) {
+        margin-bottom: 1.25rem;
       }
     }
 
@@ -50,6 +72,10 @@
 
     @media (max-width: $xlg) {
       padding-top: 2.5rem;
+    }
+
+    @media (max-width: $lg) {
+      padding-top: 0;
     }
 
     h3 {
@@ -101,6 +127,7 @@
 
         @media (max-width: $xlg) {
           line-height: 2rem;
+          gap: 0.875rem;
         }
       }
 
@@ -120,9 +147,17 @@
       position: relative;
       margin-bottom: 3.125rem;
 
+      @media (max-width: $lg) {
+        margin-bottom: 1rem;
+      }
+
       input {
         width: 100%;
         padding: 1.5625rem 6.25rem 1.5625rem 1.5625rem;
+
+        @media (max-width: $lg) {
+          padding: 1rem 6.25rem 1rem 1.5625rem;
+        }
       }
 
       .btn {
@@ -146,6 +181,10 @@
       justify-content: flex-end;
       gap: 1.25rem;
 
+      @media (max-width: $lg) {
+        gap: 0.625rem;
+      }
+
       a {
         width: 2.5rem;
         height: 2.5rem;
@@ -156,6 +195,12 @@
         align-items: center;
         justify-content: center;
         transition: all 0.3s;
+
+        @media (max-width: $lg) {
+          width: 1.875rem;
+          height: 1.875rem;
+          padding: 0.5625rem;
+        }
 
         &:hover {
           background: $secondary-color;
@@ -178,4 +223,11 @@
   background: $black-color;
   color: $white-color;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: $md) {
+    text-align: center;
+    font-size: 0.875rem;
+    padding-block: 1rem;
+    line-height: 1.7;
+  }
 }

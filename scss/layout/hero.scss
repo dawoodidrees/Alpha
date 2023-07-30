@@ -13,6 +13,20 @@
     padding-block: 12rem 3.125rem;
   }
 
+  @media (max-width: $lg) {
+    min-height: 32rem;
+    padding-block: 10rem 2rem;
+  }
+
+  @media (max-width: $md) {
+    min-height: 25rem;
+    padding-block: 8rem 1rem;
+  }
+
+  @media (max-width: $sm) {
+    min-height: 23rem;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -43,6 +57,19 @@
       @media (max-width: $xlg) {
         margin-bottom: 2rem;
       }
+
+      @media (max-width: $lg) {
+        margin-bottom: 1.25rem;
+      }
+
+      @media (max-width: $md) {
+        margin-bottom: 1rem;
+      }
+
+      @media (max-width: $sm) {
+        text-align: center;
+        margin-bottom: 0.625rem;
+      }
     }
 
     &-title {
@@ -53,6 +80,22 @@
       @media (max-width: $xlg) {
         max-width: 35rem;
         margin-bottom: 8rem;
+      }
+
+      @media (max-width: $lg) {
+        max-width: 28rem;
+        margin-bottom: 4rem;
+      }
+
+      @media (max-width: $md) {
+        max-width: 22.4rem;
+        margin-bottom: 3.2rem;
+      }
+
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin: 0 auto 1rem;
+        text-align: center;
       }
 
       span {
@@ -67,11 +110,20 @@
       gap: 0.625rem;
       max-width: max-content;
 
+      @media (max-width: $sm) {
+        margin-inline: auto;
+      }
+
       span {
         display: flex;
         svg {
           width: 1rem;
           height: 1rem;
+
+          @media (max-width: $md) {
+            width: 0.75rem;
+            height: 0.75rem;
+          }
         }
       }
 

@@ -5,6 +5,18 @@
     padding-block: 5rem;
   }
 
+  @media (max-width: $lg) {
+    padding-block: 4rem;
+  }
+
+  @media (max-width: $md) {
+    padding-block: 3.2rem;
+  }
+
+  @media (max-width: $sm) {
+    padding-block: 2.5rem;
+  }
+
   &__title {
     max-width: 53.125rem;
     text-transform: capitalize;
@@ -14,6 +26,14 @@
       max-width: 42.5rem;
       margin-bottom: 2.5rem;
     }
+
+    @media (max-width: $lg) {
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 1.25rem;
+    }
   }
 
   &__sub-title {
@@ -22,6 +42,14 @@
 
     @media (max-width: $xlg) {
       margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: $lg) {
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 1.25rem;
     }
   }
 
@@ -38,6 +66,11 @@
       svg {
         width: 1rem;
         height: 1rem;
+
+        @media (max-width: $md) {
+          width: 0.625rem;
+          height: 0.625rem;
+        }
       }
     }
 
@@ -61,6 +94,16 @@
       margin-top: 9.6rem;
     }
 
+    @media (max-width: $lg) {
+      gap: 5rem 1.5rem;
+      margin-top: 5.6rem;
+    }
+
+    @media (max-width: $md) {
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
     &-card {
       width: calc(33.33% - 1rem);
       padding: 1.875rem;
@@ -74,6 +117,14 @@
         padding: 1.5rem;
       }
 
+      @media (max-width: $lg) {
+        width: calc(50% - 1rem);
+      }
+
+      @media (max-width: $md) {
+        width: 100%;
+      }
+
       &:hover {
         background: $secondary-color;
       }
@@ -81,6 +132,10 @@
       &:hover &-image {
         img {
           transform: translateY(-50%);
+
+          @media (max-width: $md) {
+            transform: translateY(-10%);
+          }
         }
       }
 
@@ -109,6 +164,10 @@
           border-radius: 1.25rem;
           transform: translateY(-30%);
           transition: 0.2s all linear;
+
+          @media (max-width: $md) {
+            transform: translateY(0);
+          }
         }
       }
 

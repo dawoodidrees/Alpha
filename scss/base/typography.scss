@@ -115,8 +115,50 @@ body {
   }
 }
 
+@media (max-width: $lg) {
+  .h1 {
+    font-size: 3.675rem;
+    line-height: 4.4rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 2.4rem;
+    line-height: 2.85rem;
+  }
+
+  .primary-body-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media (max-width: $md) {
+  .h1 {
+    font-size: 2.94rem;
+    line-height: 3.5rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 1.9rem;
+    line-height: 2.25rem;
+  }
+
   .page-width {
     padding-inline: 1.5rem;
+  }
+}
+
+@media (max-width: $sm) {
+  .h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
 }
