@@ -4,11 +4,20 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: $xlg) {
+    padding-block: 6.4rem;
+    gap: 3.125rem;
+  }
+
   &__image {
     width: 50%;
     height: 40.625rem;
     display: flex;
     position: relative;
+
+    @media (max-width: $xlg) {
+      height: 32.5rem;
+    }
 
     &-img {
       width: 100%;
@@ -18,6 +27,7 @@
       margin-inline: auto;
       position: relative;
       z-index: 5;
+      object-fit: cover;
     }
 
     &-bg {
@@ -38,16 +48,28 @@
     &-sub-title {
       text-transform: uppercase;
       margin-bottom: 1.25rem;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 1rem;
+      }
     }
 
     &-title {
       margin-bottom: 3rem;
       text-transform: capitalize;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 2.4rem;
+      }
     }
 
     &-desc {
       margin-bottom: 3rem;
       font-weight: $light;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 2.4rem;
+      }
     }
   }
 

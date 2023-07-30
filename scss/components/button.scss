@@ -12,6 +12,10 @@
   border: 2px solid transparent;
   font-family: $primary-font;
 
+  @media (max-width: $xlg) {
+    padding: 1.25rem 1.5rem;
+  }
+
   &--primary {
     background: $secondary-color;
     color: $white-color;

@@ -8,6 +8,11 @@
   background-position: top;
   z-index: 5;
 
+  @media (max-width: $xlg) {
+    min-height: 40rem;
+    padding-block: 12rem 3.125rem;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -34,12 +39,21 @@
     &-sub-title {
       color: $white-color;
       margin-bottom: 4.375rem;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 2rem;
+      }
     }
 
     &-title {
       margin-bottom: 10rem;
       max-width: 43.75rem;
       text-transform: capitalize;
+
+      @media (max-width: $xlg) {
+        max-width: 35rem;
+        margin-bottom: 8rem;
+      }
 
       span {
         color: $secondary-color;
@@ -51,6 +65,7 @@
       align-items: center;
       justify-content: center;
       gap: 0.625rem;
+      max-width: max-content;
 
       span {
         display: flex;

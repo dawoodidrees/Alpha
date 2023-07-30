@@ -1,15 +1,28 @@
 .featured-blog {
   padding-block: 6.875rem;
 
+  @media (max-width: $xlg) {
+    padding-block: 5rem;
+  }
+
   &__title {
     max-width: 53.125rem;
     text-transform: capitalize;
     margin-bottom: 3.125rem;
+
+    @media (max-width: $xlg) {
+      max-width: 42.5rem;
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__sub-title {
     margin-bottom: 3.125rem;
     text-transform: uppercase;
+
+    @media (max-width: $xlg) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__btn {
@@ -44,6 +57,10 @@
     margin-top: 12rem;
     flex-wrap: wrap;
 
+    @media (max-width: $xlg) {
+      margin-top: 9.6rem;
+    }
+
     &-card {
       width: calc(33.33% - 1rem);
       padding: 1.875rem;
@@ -53,13 +70,17 @@
       transition: 0.3s all linear;
       cursor: pointer;
 
+      @media (max-width: $xlg) {
+        padding: 1.5rem;
+      }
+
       &:hover {
         background: $secondary-color;
       }
 
       &:hover &-image {
         img {
-          transform: translateY(-55%);
+          transform: translateY(-50%);
         }
       }
 
@@ -77,12 +98,16 @@
         display: flex;
         height: 17.1875rem;
 
+        @media (max-width: $xlg) {
+          height: 12rem;
+        }
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           border-radius: 1.25rem;
-          transform: translateY(-50%);
+          transform: translateY(-30%);
           transition: 0.2s all linear;
         }
       }
@@ -98,12 +123,20 @@
         margin-bottom: 1.25rem;
         letter-spacing: -0.05rem;
         transition: 0.2s all linear;
+
+        @media (max-width: $xlg) {
+          margin-bottom: 1rem;
+        }
       }
 
       &-desc {
         color: $steel-blue-color;
         margin-bottom: 3.125rem;
         transition: 0.2s all linear;
+
+        @media (max-width: $xlg) {
+          margin-bottom: 2.5rem;
+        }
       }
 
       &-link {

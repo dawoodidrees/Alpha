@@ -73,6 +73,48 @@ body {
   padding-inline: 5rem;
 }
 
+@media (max-width: $xlg) {
+  .h1 {
+    font-size: 4.6rem;
+    line-height: 5.5rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  .h3 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .h4 {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+
+  .primary-body-text {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .secondary-body-text {
+    font-size: 0.875rem;
+    line-height: 1.6rem;
+  }
+
+  .inter-body-text {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .page-width {
+    padding-inline: 3rem;
+  }
+}
+
 @media (max-width: $md) {
   .page-width {
     padding-inline: 1.5rem;

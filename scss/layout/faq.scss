@@ -1,14 +1,26 @@
 .faq {
   padding-bottom: 6.25rem;
 
+  @media (max-width: $xlg) {
+    padding-bottom: 5rem;
+  }
+
   &__title {
     margin-bottom: 6.25rem;
+
+    @media (max-width: $xlg) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__accordion {
-    margin-bottom: 1.25rem;
     max-width: 50rem;
+    margin-bottom: 1.25rem;
     padding-left: 4.375rem;
+
+    @media (max-width: $xlg) {
+      margin-bottom: 1rem;
+    }
 
     &:hover &-wrapper h3 {
       color: $secondary-color;
@@ -39,6 +51,10 @@
       cursor: pointer;
       margin-bottom: 1.25rem;
       position: relative;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 0.625rem;
+      }
     }
 
     &-chevron {

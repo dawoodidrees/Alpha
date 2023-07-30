@@ -2,9 +2,17 @@
   padding-block: 6rem 3.75rem;
   background: $secondary-color;
 
+  @media (max-width: $xlg) {
+    padding-block: 4.8rem 3rem;
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 6.25rem;
+
+    @media (max-width: $xlg) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__row {
@@ -20,6 +28,10 @@
       padding: 3.75rem;
       position: relative;
 
+      @media (max-width: $xlg) {
+        padding: 1.25rem;
+      }
+
       &:not(:last-child)::after {
         position: absolute;
         content: "";
@@ -34,6 +46,11 @@
       &-heading {
         font-size: 1.5rem;
         line-height: 2.375rem;
+
+        @media (max-width: $xlg) {
+          font-size: 1.2rem;
+          line-height: 1.9rem;
+        }
       }
 
       &-title {
@@ -46,6 +63,11 @@
           font-size: 2rem;
           line-height: 2.375rem;
           font-weight: $semi-bold;
+
+          @media (max-width: $xlg) {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+          }
         }
 
         a {
@@ -59,6 +81,11 @@
           border-radius: 50%;
           font-size: 1.25rem;
           font-weight: $bold;
+
+          @media (max-width: $xlg) {
+            min-width: 1.75rem;
+            min-height: 1.75rem;
+          }
         }
       }
     }

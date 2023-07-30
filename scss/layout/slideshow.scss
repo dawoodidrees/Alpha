@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: $xlg) {
+    padding-block: 4rem;
+  }
+
   &__slide {
     width: 4rem;
     height: 4rem;

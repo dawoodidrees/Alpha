@@ -3,6 +3,10 @@
   background-color: $black-color;
   display: flex;
 
+  @media (max-width: $xlg) {
+    padding-block: 5rem;
+  }
+
   & > div {
     width: 25%;
   }
@@ -12,22 +16,41 @@
       margin-bottom: 3.125rem;
       width: 5rem;
       height: 5rem;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 2.5rem;
+        width: 4rem;
+        height: 4rem;
+      }
     }
 
     &-desc {
       color: $white-color;
       margin-bottom: 1.875rem;
       max-width: 70%;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 1.5rem;
+        max-width: 90%;
+      }
     }
 
     &-link {
       display: inline-block;
       padding: 1rem 1.875rem;
+
+      @media (max-width: $xlg) {
+        padding: 0.75rem 1.5rem;
+      }
     }
   }
 
   &__links {
     padding-top: 3.125rem;
+
+    @media (max-width: $xlg) {
+      padding-top: 2.5rem;
+    }
 
     h3 {
       display: inline-block;
@@ -35,6 +58,11 @@
       font-size: 1.5rem;
       margin-bottom: 2.5rem;
       position: relative;
+
+      @media (max-width: $xlg) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
 
       &::before,
       &::after {
@@ -59,6 +87,10 @@
       display: flex;
       margin-bottom: 0.3125rem;
 
+      @media (max-width: $xlg) {
+        margin-bottom: 0.25rem;
+      }
+
       .secondary-body-text {
         color: $white-color;
         display: flex;
@@ -66,6 +98,10 @@
         justify-content: flex-start;
         gap: 1.25rem;
         line-height: 2.5rem;
+
+        @media (max-width: $xlg) {
+          line-height: 2rem;
+        }
       }
 
       svg {
