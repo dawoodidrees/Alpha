@@ -66,8 +66,12 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1.5rem;
-    max-width: 81.25rem;
+    margin-top: 3.125rem;
     margin-inline: auto;
+
+    @media (max-width: $lg) {
+      margin-top: 1.875rem;
+    }
 
     @media (max-width: $md) {
       flex-flow: column;

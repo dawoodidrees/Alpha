@@ -37,3 +37,29 @@
     }
   }
 }
+
+.pulse {
+  animation: pulse-animation 3s infinite linear;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(227, 219, 219, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(227, 219, 219, 0.2);
+  }
+}
+
+.light-pulse {
+  animation: light-pulse 3s infinite linear;
+}
+
+@keyframes light-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(243, 81, 98, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(243, 81, 98, 0.2);
+  }
+}
