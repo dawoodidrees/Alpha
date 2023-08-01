@@ -10,6 +10,10 @@
   left: 50%;
   transform: translateX(-50%);
 
+  @media (max-width: $md) {
+    top: 5.625rem;
+  }
+
   &__logo {
     display: flex;
     max-width: 9.375rem;
