@@ -117,8 +117,18 @@
       align-items: center;
       gap: 0.625rem;
 
+      @media (max-width: $md) {
+        .secondary-body-text {
+          font-size: 0.75rem;
+        }
+      }
+
       &:not(:last-child) {
         margin-bottom: 1.25rem;
+
+        @media (max-width: $md) {
+          margin-bottom: 0.625rem;
+        }
       }
 
       &-wrapper {
