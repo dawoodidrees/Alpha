@@ -121,6 +121,10 @@
       padding: 1.5625rem;
     }
 
+    @media (max-width: $md) {
+      padding: 1rem;
+    }
+
     &-title {
       @extend .services__title;
       margin-bottom: 2.5rem;
@@ -135,11 +139,22 @@
       align-items: flex-start;
       gap: 1.25rem;
 
+      @media (max-width: $md) {
+        gap: 0.625rem;
+      }
+
       &:not(:last-child) {
         margin-bottom: 2rem;
 
         @media (max-width: $xlg) {
           margin-bottom: 1rem;
+        }
+      }
+
+      svg {
+        @media (max-width: $md) {
+          width: 0.9375rem;
+          height: 0.9375rem;
         }
       }
 
