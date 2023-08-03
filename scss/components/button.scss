@@ -9,7 +9,7 @@
   color: $white-color;
   cursor: pointer;
   transition: all 0.2s linear;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   font-family: $primary-font;
 
   @media (max-width: $xlg) {
@@ -44,10 +44,10 @@
 
 @keyframes pulse-animation {
   0% {
-    box-shadow: 0 0 0 0px rgba(227, 219, 219, 0.2);
+    box-shadow: 0 0 0 0 rgba(227, 219, 219, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 15px rgba(227, 219, 219, 0.2);
+    box-shadow: 0 0 0 0.9375rem rgba(227, 219, 219, 0.2);
   }
 }
 
@@ -57,9 +57,9 @@
 
 @keyframes light-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(243, 81, 98, 0.2);
+    box-shadow: 0 0 0 0 rgba(243, 81, 98, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 20px rgba(243, 81, 98, 0.2);
+    box-shadow: 0 0 0 1.25rem rgba(243, 81, 98, 0.2);
   }
 }

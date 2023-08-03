@@ -196,7 +196,7 @@
       a {
         width: 2.5rem;
         height: 2.5rem;
-        padding: 10px;
+        padding: 0.625rem;
         background: $ebony-color;
         border-radius: 50%;
         display: flex;
@@ -230,7 +230,7 @@
   padding-block: 2rem;
   background: $black-color;
   color: $white-color;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
 
   @media (max-width: $md) {
     text-align: center;
