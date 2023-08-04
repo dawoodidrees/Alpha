@@ -1481,6 +1481,30 @@
                             "new_lines": "br"
                         },
                         {
+                            "key": "field_64cbec4c1ded9",
+                            "label": "Form",
+                            "name": "form",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "wpforms"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "return_format": "id",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1
+                        },
+                        {
                             "key": "field_64cba59bd1c0a",
                             "label": "Settings",
                             "name": "",
@@ -1738,5 +1762,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691068707
+    "modified": 1691086179
 }

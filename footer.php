@@ -69,15 +69,12 @@
   </div>
 
   <div class="footer__links">
-    <?php ja_the_field( 'footer_group_footer_col_4_title', ' <h3 class="h3">', '</h3>', false, true ); ?>
-    <form class="email-signup__content-input" action="#">
-      <input type="email" name="email" id="email" placeholder="Enter Your Email" />
-      <button class="btn btn--primary">
-        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14.2812 5.25781L10.7812 8.75781C10.4531 9.11328 9.87891 9.11328 9.55078 8.75781C9.19531 8.42969 9.19531 7.85547 9.55078 7.52734L11.5469 5.50391H1.42969C0.9375 5.50391 0.554688 5.12109 0.554688 4.62891C0.554688 4.10938 0.9375 3.75391 1.42969 3.75391H11.5469L9.55078 1.75781C9.19531 1.42969 9.19531 0.855469 9.55078 0.527344C9.87891 0.171875 10.4531 0.171875 10.7812 0.527344L14.2812 4.02734C14.6367 4.35547 14.6367 4.92969 14.2812 5.25781Z" fill="white" />
-        </svg>
-      </button>
-    </form>
+    <?php
+    ja_the_field( 'footer_group_footer_col_4_title', ' <h3 class="h3">', '</h3>', false, true );
+      if ($form_id = get_field( 'footer_group_footer_col_4_form', 'options' )) {
+          echo do_shortcode('[wpforms id="' . $form_id . '" title="false" description="false"]');
+        }
+    ?>
 
     <?php if( have_rows( 'social_profiles', 'options' ) ) :?>
       <div class="footer__links-social">

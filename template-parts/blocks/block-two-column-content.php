@@ -12,10 +12,9 @@
     <?php
       ja_the_field( 'title', '<h2 class="h2 email-signup__content-title">', '</h2>', true );
       ja_the_field( 'description', '<p class="primary-body-text email-signup__content-desc">', '</p>', true );
+      if ($form_id = get_sub_field('form')) {
+        echo do_shortcode('[wpforms id="' . $form_id . '" title="false" description="false"]');
+      }
     ?>
-    <form class="email-signup__content-input" action="#">
-      <input type="email" name="email" id="email" placeholder="Enter Your Email" />
-      <button class="btn btn--primary light-pulse">Submit</button>
-    </form>
   </div>
 </section>
