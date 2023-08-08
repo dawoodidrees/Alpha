@@ -1,0 +1,164 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $primary-font;
+  background: $white-color;
+}
+
+.h1 {
+  font-size: 5.75rem;
+  line-height: 6.875rem;
+  color: $white-color;
+  font-weight: $semi-bold;
+}
+
+.h2 {
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  color: $black-color;
+  font-weight: $semi-bold;
+}
+
+.h2-light {
+  font-size: 3.4375rem;
+  line-height: 3.4375rem;
+  color: $white-color;
+  font-weight: $semi-bold;
+}
+
+.h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: $black-color;
+  font-weight: $medium;
+}
+
+.h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: $secondary-color;
+  font-weight: $bold;
+  letter-spacing: 0.25rem;
+}
+
+.primary-body-text {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-family: $secondary-font;
+  color: $steel-blue-color;
+  font-weight: $regular;
+}
+
+.secondary-body-text {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: $secondary-font;
+  color: $black-color;
+  font-weight: $regular;
+}
+
+.inter-body-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: $intern-font;
+  color: $white-color;
+  font-weight: $regular;
+}
+
+.page-width {
+  max-width: $page-width;
+  margin-inline: auto;
+  padding-inline: 5rem;
+}
+
+@media (max-width: $xlg) {
+  .h1 {
+    font-size: 4.6rem;
+    line-height: 5.5rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  .h3 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .h4 {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+
+  .primary-body-text {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .secondary-body-text {
+    font-size: 0.875rem;
+    line-height: 1.6rem;
+  }
+
+  .inter-body-text {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .page-width {
+    padding-inline: 3rem;
+  }
+}
+
+@media (max-width: $lg) {
+  .h1 {
+    font-size: 3.675rem;
+    line-height: 4.4rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 2.4rem;
+    line-height: 2.85rem;
+  }
+
+  .primary-body-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: $md) {
+  .h1 {
+    font-size: 2.94rem;
+    line-height: 3.5rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 1.9rem;
+    line-height: 2.25rem;
+  }
+
+  .page-width {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (max-width: $sm) {
+  .h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  .h2,
+  .h2-light {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}

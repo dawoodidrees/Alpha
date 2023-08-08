@@ -1,0 +1,305 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 6.25rem;
+  background-color: $black-color;
+
+  @media (max-width: $xlg) {
+    padding-block: 5rem;
+  }
+
+  @media (max-width: $lg) {
+    gap: 3.125rem 0;
+    padding-block: 4rem;
+  }
+
+  @media (max-width: $md) {
+    padding-block: 3rem;
+  }
+
+  & > div {
+    width: 25%;
+
+    @media (max-width: $lg) {
+      width: 50%;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    &-image {
+      margin-bottom: 3.125rem;
+      width: 5rem;
+      height: 5rem;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 2.5rem;
+        width: 4rem;
+        height: 4rem;
+      }
+
+      @media (max-width: $md) {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    &-desc {
+      color: $white-color;
+      margin-bottom: 1.875rem;
+      max-width: 70%;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 1.5rem;
+        max-width: 90%;
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      padding: 1rem 1.875rem;
+
+      @media (max-width: $xlg) {
+        padding: 0.75rem 1.5rem;
+      }
+    }
+  }
+
+  &__links {
+    padding-top: 3.125rem;
+
+    @media (max-width: $xlg) {
+      padding-top: 2.5rem;
+    }
+
+    @media (max-width: $lg) {
+      padding-top: 0;
+    }
+
+    h3 {
+      display: inline-block;
+      color: $white-color;
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+
+      @media (max-width: $xlg) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        height: 0.125rem;
+        bottom: -0.3125rem;
+        width: 40%;
+        background: $secondary-color;
+        left: 0;
+      }
+
+      &::before {
+        background: #d9d9d9;
+        width: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    li {
+      display: flex;
+      margin-bottom: 0.3125rem;
+
+      @media (max-width: $xlg) {
+        margin-bottom: 0.25rem;
+      }
+
+      .secondary-body-text {
+        color: $white-color;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.25rem;
+        line-height: 2.5rem;
+
+        @media (max-width: $xlg) {
+          line-height: 2rem;
+          gap: 0.875rem;
+        }
+      }
+
+      svg {
+        width: 1.5625rem;
+        height: 1.5625rem;
+      }
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .email-signup__content-input {
+      position: relative;
+      margin-bottom: 3.125rem;
+
+      @media (max-width: $lg) {
+        margin-bottom: 1rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 1.5625rem 6.25rem 1.5625rem 1.5625rem;
+
+        @media (max-width: $lg) {
+          padding: 1rem 6.25rem 1rem 1.5625rem;
+        }
+
+        @media (max-width: $md) {
+          padding: 1rem 4.25rem 1rem 1.5625rem;
+        }
+      }
+
+      .btn {
+        position: absolute;
+        height: 80%;
+        width: 4.375rem;
+        padding: 0;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media (max-width: $md) {
+          width: 2.5rem;
+        }
+
+        &:hover svg path {
+          fill: $secondary-color;
+        }
+      }
+    }
+
+    &-social {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1.25rem;
+
+      @media (max-width: $lg) {
+        gap: 0.625rem;
+      }
+
+      a {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        background: $ebony-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+
+        @media (max-width: $lg) {
+          width: 1.875rem;
+          height: 1.875rem;
+          padding: 0.5625rem;
+        }
+
+        &:hover {
+          background: $secondary-color;
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.subfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2rem;
+  background: $black-color;
+  color: $white-color;
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: $md) {
+    text-align: center;
+    font-size: 0.875rem;
+    padding-block: 1rem;
+    line-height: 1.7;
+  }
+}
+.footer__links form{
+  width: 100% !important;
+  position: relative !important;
+}
+.footer__links div.wpforms-container-full input[type=email] {
+  font-family: $primary-font;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  font-size: 1.125rem;
+  background-color: $primary-color;
+  border: 0.125rem solid $secondary-color;
+  border-radius: 0.625rem;
+  color: $white-color;
+  outline: none;
+  height: 70px;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  @media (max-width: $xlg) {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+  @media (max-width: $md) {
+    height: 48px;
+  }
+
+}
+.footer__links .wpforms-container.inline-fields .wpforms-field-container{
+  display: block;
+  width: 100%;
+}
+.footer__links div.wpforms-container-full .wpforms-form .wpforms-submit-container{
+  position: absolute;
+  height: 55%;
+  width: 4.375rem;
+  padding: 0;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+}
+.footer__links div.wpforms-container-full button[type=submit]{
+  height: 100%;
+}
+
+.footer__links div.wpforms-container-full button[type=submit]::before{
+  content: '';
+  display: block;
+  background: $secondary-color;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.footer__links div.wpforms-container-full button[type=submit]::after{
+  content: url("data:image/svg+xml,%3Csvg width='15' height='10' viewBox='0 0 15 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2812 5.25781L10.7812 8.75781C10.4531 9.11328 9.87891 9.11328 9.55078 8.75781C9.19531 8.42969 9.19531 7.85547 9.55078 7.52734L11.5469 5.50391H1.42969C0.9375 5.50391 0.554688 5.12109 0.554688 4.62891C0.554688 4.10938 0.9375 3.75391 1.42969 3.75391H11.5469L9.55078 1.75781C9.19531 1.42969 9.19531 0.855469 9.55078 0.527344C9.87891 0.171875 10.4531 0.171875 10.7812 0.527344L14.2812 4.02734C14.6367 4.35547 14.6367 4.92969 14.2812 5.25781Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+  position: relative;
+  z-index: 2;
+}

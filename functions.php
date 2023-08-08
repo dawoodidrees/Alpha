@@ -144,6 +144,7 @@ function alpha_scripts() {
 
 	wp_enqueue_style( 'alpha-main', get_template_directory_uri() . '/dist/css/main.css' );
 	wp_enqueue_script( 'alpha-swiper', get_template_directory_uri() . '/dist/script/swiper.js', ['jquery'], _S_VERSION, true );
+	wp_enqueue_script( 'alpha-tabs', get_template_directory_uri() . '/dist/script/tabs.js', ['jquery'], _S_VERSION, true );
 	wp_enqueue_script( 'alpha-main', get_template_directory_uri() . '/dist/script/script.js', ['jquery'], _S_VERSION, true );
 	// wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

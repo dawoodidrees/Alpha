@@ -1,0 +1,65 @@
+.btn {
+  padding: 1.5625rem 1.875rem;
+  background: none;
+  outline: none;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: $semi-bold;
+  color: $white-color;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border: 0.125rem solid transparent;
+  font-family: $primary-font;
+
+  @media (max-width: $xlg) {
+    padding: 1.25rem 1.5rem;
+  }
+
+  @media (max-width: $lg) {
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: $md) {
+    padding: 0.625rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  &--primary {
+    background: $secondary-color;
+    color: $white-color;
+
+    &:hover {
+      background: $white-color;
+      color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+}
+
+.pulse {
+  animation: pulse-animation 3s infinite linear;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(227, 219, 219, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0.9375rem rgba(227, 219, 219, 0.2);
+  }
+}
+
+.light-pulse {
+  animation: light-pulse 3s infinite linear;
+}
+
+@keyframes light-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(243, 81, 98, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 1.25rem rgba(243, 81, 98, 0.2);
+  }
+}

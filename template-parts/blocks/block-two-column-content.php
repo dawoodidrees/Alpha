@@ -26,7 +26,6 @@
               </svg>
             </div>
             <?php ja_the_field('list_text', '<p class="secondary-body-text">', '</p>', true ); ?>
-            <!-- <p class="secondary-body-text">Conversion focused</p> -->
           </div>
         <?php endwhile; ?>
       </div>
