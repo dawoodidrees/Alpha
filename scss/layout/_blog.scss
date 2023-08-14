@@ -99,6 +99,22 @@
           }
         }
       }
+      ol {
+        li {
+          padding-bottom: 0.625rem;
+          margin-bottom: 0.625rem;
+
+          a {
+            color: $secondary-color;
+            text-decoration: underline;
+            font-size: 1rem;
+            line-height: 1.75rem;
+          }
+        }
+      }
     }
   }
+}
+.archive .banner a {
+  color: #fff;
 }
