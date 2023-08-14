@@ -18,6 +18,10 @@ img {
   height: auto;
 }
 
+body {
+  position: relative;
+}
+
 .disable-body {
   position: relative;
   transition: all 0.3s;
