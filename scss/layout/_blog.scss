@@ -6,16 +6,20 @@
   &__article {
     width: 70%;
     padding-inline: 3.125rem;
-
-    .secondary-body-text {
+    p {
       margin-block: 0.3125rem;
       color: $steel-blue-color;
+      @extend .secondary-body-text;
+    }
+    h2{
+      @extend .h2;
     }
 
-    .h3 {
+    h3 {
       margin-block: 1.5625rem;
       font-size: 1.5625rem;
       font-weight: $bold;
+      @extend .h3;
     }
 
     ul {
@@ -52,11 +56,12 @@
     width: 30%;
     padding-inline: 0.625rem;
 
-    .h3 {
+    h3 {
       margin-bottom: 1.875rem;
+      @extend .h3;
     }
 
-    &-col {
+    &-col,.widget_block {
       padding: 3.125rem;
 
       ul {

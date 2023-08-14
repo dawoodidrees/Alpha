@@ -8,56 +8,41 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
+<section id="post-<?php the_ID(); ?>" <?php post_class(['banner', 'page-width']); ?>>
+  <?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="h1">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h1 class="h1 "><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				alpha_posted_on();
-				alpha_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php alpha_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'alpha' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
+    ?>
+  <p class="primary-body-text"><?php echo get_the_excerpt();?>
+  </p>
+  <div class="banner__bg">
+    <?php alpha_post_thumbnail(); ?>
+  </div>
+</section>
+<div class="blog page-width">
+  <div class="blog__article">
+  <?php
+		if ( is_singular() ) {
+      the_title( '<h2 class="h2">', '</h2>' );
+    } else {
+			the_title( '<h2 class="h2 "><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+    }
+    $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+    $time_string = sprintf(
+			$time_string,
+			esc_attr( get_the_date( DATE_W3C ) ),
+			esc_html( get_the_date() ),
+			esc_attr( get_the_modified_date( DATE_W3C ) ),
+			esc_html( get_the_modified_date() )
 		);
+    $posted_on = sprintf( esc_html_x( 'Posted on %s', 'post date', 'alpha' ),$time_string );
+      echo '<p class="posted-on">' . $posted_on . '</p>';
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'alpha' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+    the_content(); ?>
+  </div>
+  <?php get_sidebar(); ?>
 
-	<footer class="entry-footer">
-		<?php alpha_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</div>

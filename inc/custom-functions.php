@@ -280,3 +280,9 @@ add_filter('excerpt_length',function ( $length ) {
   // Number of words to display in the excerpt.
   return 20;
 },20);
+
+
+function new_excerpt_more( $more ) {
+  return '.';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
