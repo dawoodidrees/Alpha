@@ -1,3 +1,12 @@
+.single-post,.single-page{
+  .banner{
+    h1,.h1{
+      font-size: 3.25rem;
+      line-height: 3.25rem;
+      text-align: center;
+    }
+  }
+}
 .blog {
   padding-block: 7.5rem;
   background-color: #f4f4f4;
@@ -28,6 +37,19 @@
 
       li {
         list-style: disc;
+        @extend .secondary-body-text;
+
+        &::marker {
+          color: $secondary-color;
+        }
+      }
+    }
+    ol {
+      padding-left: 1.875rem;
+      margin-block: 1.5625rem;
+
+      li {
+        list-style: decimal;
         @extend .secondary-body-text;
 
         &::marker {
