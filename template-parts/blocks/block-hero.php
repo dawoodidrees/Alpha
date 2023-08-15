@@ -5,9 +5,19 @@
   }
 ?>
 <section <?php ja_section_id(); ?> class="<?php echo $classes; ?>hero page-width">
-  <span class="bg-image" style="background-image: url(<?php echo ja_get_attachment( get_sub_field('background_image'), 'full' ); ?>)">
-    <span class="overlay"></span>
-  </span>
+
+
+  <?php if ( get_sub_field( 'media_type') == 'image') : ?>
+    <span class="bg-image" style="background-image: url(<?php echo ja_get_attachment( get_sub_field('background_image'), 'full' ); ?>)">
+      <span class="overlay"></span>
+    </span>
+
+  <?php else : ?>
+    <video width="100%" height="100%" controls>
+      <source src="<?php echo get_sub_field('video'); ?>" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  <?php endif; ?>
   <div class="hero__content">
     <?php
       ja_the_field( 'pre_title', '<h4 class="secondary-body-text hero__content-sub-title">', '</h4>', true );

@@ -22,7 +22,7 @@
     <?php alpha_post_thumbnail(); ?>
   </div>
 </section>
-<div class="blog page-width">
+<div class="blog page-width fullWidth__page">
   <div class="blog__article">
   <?php
 		if ( is_singular() ) {
@@ -43,6 +43,5 @@
 
     the_content(); ?>
   </div>
-  <?php get_sidebar(); ?>
 
 </div>

@@ -11,6 +11,14 @@
   ?>
 
   <div class="banner__bg">
-    <?php ja_get_attachment( get_sub_field('background_image'), 'full', '', true ); ?>
+    <?php if ( get_sub_field( 'media_type') == 'image') : ?>
+      <?php ja_get_attachment( get_sub_field('background_image'), 'full', '', true ); ?>
+
+    <?php else : ?>
+      <video width="100%" height="100%" controls>
+        <source src="<?php echo get_sub_field('video'); ?>" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <?php endif; ?>
   </div>
 </section>
