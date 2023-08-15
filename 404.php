@@ -10,21 +10,21 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'alpha' ); ?></h1>
-			</header><!-- .page-header -->
+  <section class="error-404 not-found page-width">
+    <header class="page-header">
+      <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'alpha' ); ?></h1>
+    </header><!-- .page-header -->
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'alpha' ); ?></p>
-        <a href="<?php echo get_home_url(); ?>" class="btn btn--primary pulse"> Back To Home</a>
+    <div class="page-content">
+      <p><?php esc_html_e( 'It looks like nothing was found at this location.', 'alpha' ); ?></p>
+      <a href="<?php echo get_home_url(); ?>" class="btn btn--primary light-pulse"> Back To Home</a>
 
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
+    </div><!-- .page-content -->
+  </section><!-- .error-404 -->
 
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
 get_footer();

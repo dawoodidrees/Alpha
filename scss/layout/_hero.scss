@@ -2,13 +2,9 @@
   position: relative;
   min-height: 50rem;
   padding-block: 15rem 3.125rem;
-  // background-image: url("/images/hero.png");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: top;
-  // z-index: 5;
 
-  .bg-image{
+  .bg-image,
+  .bg-video {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -16,6 +12,7 @@
     background-size: cover;
     background-position: top;
     z-index: -2;
+    object-fit: cover;
   }
 
   @media (max-width: $xlg) {
