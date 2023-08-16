@@ -59,6 +59,22 @@
             "append": ""
         },
         {
+            "key": "field_64dcc1e5d6bab",
+            "label": "Announcement Text",
+            "name": "text",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_64cb9fdfe9373",
             "label": "Address",
             "name": "address",
@@ -386,7 +402,8 @@
                     "return_format": "id",
                     "multiple": 0,
                     "allow_null": 0,
-                    "ui": 1
+                    "ui": 1,
+                    "bidirectional_target": []
                 }
             ]
         }
@@ -409,5 +426,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691090158
+    "modified": 1692189244
 }

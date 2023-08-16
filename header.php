@@ -48,9 +48,13 @@
         <div class="announcement-bar__contact-detail">
           <?php get_template_part( 'template-parts/svg/header/icon', 'phone'); ?>
           <a
-            href="tel:<?php echo get_field( 'phone', 'options' ); ?>"><?php echo get_field( 'phone', 'options' ); ?></a>
+            href="tel:<?php echo get_field( 'phone', 'options' ); ?>"><?php echo get_field( 'phone', 'options' ); ?>
+          </a>
         </div>
         <?php endif; ?>
+      </div>
+      <div class="announement-bar__middle">
+        <?php ja_the_link( get_field( 'text' , 'option'), 'middle-link'); ?>
       </div>
 
 
