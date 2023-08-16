@@ -9,10 +9,12 @@
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  height: 7.3125rem;
 
   @media (max-width: $md) {
     top: 1rem;
     position: fixed;
+    height: 2.3125rem;
   }
 
   @media (max-width: $sm) {
@@ -23,6 +25,16 @@
   &__logo {
     display: flex;
     max-width: 9.375rem;
+
+    &-header {
+      display: flex;
+
+      img {
+        width: 3.125rem;
+        height: 3.125rem;
+        object-fit: cover;
+      }
+    }
 
     @media (max-width: $lg) {
       max-width: 7rem;
