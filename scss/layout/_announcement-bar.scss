@@ -34,30 +34,30 @@
     padding: 0.625rem;
     font-size: 0.875rem;
 
-    &:hover::after {
-      right: -1.875rem;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      fill: #fff;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z' fill='white' /%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-size: contain;
-      right: -1.5625rem;
-      top: 50%;
-      transform: translate(0, -50%);
-      width: 1.25rem;
-      height: 1.25rem;
-      transition: 0.3s all;
-    }
-
     a {
       color: $white-color;
 
       &:hover {
         text-decoration: underline;
+      }
+
+      &:hover::after {
+        right: -1.875rem;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        fill: #fff;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z' fill='white' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: -1.5625rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 1.25rem;
+        height: 1.25rem;
+        transition: 0.3s all;
       }
     }
   }
