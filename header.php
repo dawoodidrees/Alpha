@@ -47,13 +47,12 @@
         <?php if( get_field( 'phone', 'options' ) ) : ?>
         <div class="announcement-bar__contact-detail">
           <?php get_template_part( 'template-parts/svg/header/icon', 'phone'); ?>
-          <a
-            href="tel:<?php echo get_field( 'phone', 'options' ); ?>"><?php echo get_field( 'phone', 'options' ); ?>
+          <a href="tel:<?php echo get_field( 'phone', 'options' ); ?>"><?php echo get_field( 'phone', 'options' ); ?>
           </a>
         </div>
         <?php endif; ?>
       </div>
-      <div class="announement-bar__middle">
+      <div class="announcement-bar__middle ">
         <?php ja_the_link( get_field( 'text' , 'option'), 'middle-link'); ?>
       </div>
 
@@ -70,10 +69,10 @@
     </div>
 
     <header class="navbar page-width">
-      <div class="navbar__logo">
-        <!-- <a href="<?php echo esc_url(home_url('/')); ?>">
+      <div class="navbar__logo mobile-navbar__logo">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
           <img loading="lazy" src="<?php asset_path('/images/logo.png', true );?>" alt="alpha-logo" />
-        </a> -->
+        </a>
       </div>
 
       <?php

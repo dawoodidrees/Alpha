@@ -63,9 +63,11 @@ function hideDrawer() {
   body.classList.remove("disable-body");
 }
 
-currentDrawerTarget.addEventListener("click", () => {
-  showDrawer();
-});
+if (currentDrawerTarget) {
+  currentDrawerTarget.addEventListener("click", () => {
+    showDrawer();
+  });
+}
 
 document.addEventListener("click", (event) => {
   const clickedElement = event.target;

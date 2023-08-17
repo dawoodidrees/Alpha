@@ -1,7 +1,6 @@
-
-<div class="blog page-width">
+<div class="page-width blog__archive">
   <div class="blog__article">
-  <?php
+    <?php
 		if ( is_singular() ) {
       the_title( '<h2 class="h2">', '</h2>' );
     } else {

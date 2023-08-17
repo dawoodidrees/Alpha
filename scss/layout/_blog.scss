@@ -163,3 +163,28 @@
 .archive .banner a {
   color: #fff;
 }
+
+body.blog {
+  padding: 0 !important;
+  display: block !important;
+}
+
+.blog__archive {
+  padding-block: 2rem;
+
+  @media (max-width: $lg) {
+    padding-block: 1.5rem;
+  }
+
+  @media (max-width: $md) {
+    padding-block: 1.5rem;
+  }
+
+  .blog__article {
+    width: 100%;
+  }
+
+  .h2 {
+    margin-block: 0.625rem;
+  }
+}

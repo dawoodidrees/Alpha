@@ -9,12 +9,14 @@
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  height: 7.3125rem;
 
-  @media (max-width: $md) {
+  @media (min-width: $xlg) {
+    height: 7.3125rem;
+  }
+
+  @media (max-width: $xlg) {
     top: 1rem;
     position: fixed;
-    height: 2.3125rem;
   }
 
   @media (max-width: $sm) {
@@ -46,6 +48,23 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  .mobile-navbar__logo {
+    display: flex;
+
+    a {
+      display: none;
+
+      @media (max-width: $xlg) {
+        display: block;
+        width: 6.25rem;
+      }
+
+      @media (max-width: $md) {
+        width: 4.375rem;
+      }
     }
   }
 
