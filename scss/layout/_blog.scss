@@ -169,6 +169,50 @@ body.blog {
   display: block !important;
 }
 
+.blog__page {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $lg) {
+    flex-flow: column wrap;
+  }
+
+  .blog-posts__wrapper {
+    width: 70%;
+    padding: 2rem 5rem;
+
+    @media (max-width: $lg) {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .page-width {
+      margin-left: 0;
+      margin-right: auto;
+      padding: 0;
+    }
+
+    .blog__article {
+      width: 100%;
+      padding: 0;
+
+      h2 {
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .blog__sidebar {
+    padding: 0 2rem;
+
+    section {
+      padding-inline: 0;
+    }
+  }
+}
+
 .blog__archive {
   padding-block: 2rem;
 
